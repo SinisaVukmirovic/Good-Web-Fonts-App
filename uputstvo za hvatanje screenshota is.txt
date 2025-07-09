@@ -1,0 +1,28 @@
+uputstvo za hvatanje screenshota iste sirine
+
+iskopirati recenicu bez prvog the
+
+podesiti velicini fonta na 24px
+
+drzati otvoren filter sidebar
+
+konzola smanjena do kraja u desno
+
+screen node capture treba da bude 377px sirine
+
+=================
+
+ime fonta na home page neka bude michroma font ILI ROBOTO
+REZERVE
+rubic, ubuntu, work sans, dm sans, tit web, oswaldm michroma, 
+
+==================
+
+cinzel, serif - mozda i za glavni font
+
+==================
+
+jos fontova
+
+Oswald
+raleway

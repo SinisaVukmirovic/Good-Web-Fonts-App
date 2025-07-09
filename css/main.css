@@ -1,0 +1,111 @@
+:root {
+    --bg-clr: hsl(240, 3%, 8%);
+    --card-bg-clr: hsl(210, 5%, 16%);
+    --card-bg-clr-2: hsl(0, 0%, 19%);
+    --theme-clr: hsl(203, 100%, 23%);
+    --font-clr: hsl(217, 89%, 82%);
+    --font-clr-2: hsl(140, 3%, 77%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-clr);
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+
+    & h1 {
+        text-transform: uppercase;
+        word-spacing: -.5rem;
+        /* letter-spacing: 2px; */
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: var(--font-clr);
+        /* color: var(--theme-clr); */
+        font-size: 3rem;
+
+        & span {
+            font-size: 2rem;
+            color: hsl(from var(--font-clr) h s calc(l + 15));
+        }
+    }
+
+    & nav {
+        width: 90%;
+        margin: 1.5rem auto 0;
+        background-image: linear-gradient(90deg, transparent, var(--theme-clr), transparent);
+        display: flex;
+        justify-content: center;
+        padding: .5rem;
+        position: relative;
+
+        /* &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 1px;
+            width: 100%;
+            background-image: linear-gradient(90deg, transparent, var(--font-clr), transparent);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            width: 100%;
+            background-image: linear-gradient(90deg, transparent, var(--font-clr), transparent);
+        } */
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-image: linear-gradient(90deg, transparent, var(--font-clr), transparent);
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+        }
+
+        & ul {
+            list-style-type: none;
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            /* gap: 3rem; */
+
+            & li {
+                padding: .2rem;
+
+                & a {
+                    padding: .2rem;
+                    text-decoration: none;
+                    color: var(--font-clr-2);
+                    font-family: "Cinzel", serif;
+                    font-optical-sizing: auto;
+                    font-weight: 500;
+                    font-style: normal;
+                }
+
+                &:hover a {
+                    background-color: red;
+                }
+
+            }
+        }
+    }
+}
