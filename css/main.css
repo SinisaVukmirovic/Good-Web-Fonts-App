@@ -35,7 +35,8 @@ header {
 
         & span {
             font-size: 2rem;
-            color: hsl(from var(--font-clr) h s calc(l + 15));
+            /* color: hsl(from var(--font-clr) h s calc(l + 15)); */
+            color: var(--font-clr-2);
         }
     }
 
@@ -74,9 +75,11 @@ header {
             width: 100%;
             background-image: linear-gradient(90deg, transparent, var(--font-clr), transparent);
         }
+
         &::before {
             top: 0;
         }
+
         &::after {
             bottom: 0;
         }
@@ -99,13 +102,33 @@ header {
                     font-optical-sizing: auto;
                     font-weight: 500;
                     font-style: normal;
+                    transition: color ease-in-out 200ms;
                 }
 
                 &:hover a {
-                    background-color: red;
+                    color: var(--font-clr);
                 }
 
             }
         }
     }
+}
+
+main {
+    min-height: 100svh;
+    background-color: hsl(from var(--theme-clr) h s l /.2);
+    width: 80%;
+    margin: 1rem auto 1rem;
+}
+
+footer {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding: .75rem;
+    font-size: .8rem;
+    background-color: var(--theme-clr);
+    color: var(--font-clr);
 }
