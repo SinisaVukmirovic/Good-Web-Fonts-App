@@ -1,20 +1,31 @@
+@import url(./reset.css);
+
 :root {
     --bg-clr: hsl(240, 3%, 8%);
-    --card-bg-clr: hsl(210, 5%, 16%);
-    --card-bg-clr-2: hsl(0, 0%, 19%);
+    /* --card-bg-clr: hsl(210, 5%, 16%); */
+    /* --card-bg-clr-2: hsl(0, 0%, 19%); */
     --theme-clr: hsl(203, 100%, 23%);
-    --font-clr: hsl(217, 89%, 82%);
-    --font-clr-2: hsl(140, 3%, 77%);
+    --text-clr: hsl(217, 89%, 82%);
+    /* --text-clr-2: hsl(140, 3%, 77%); */
+
+    --app-width: 85%;
 }
 
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 body {
     background-color: var(--bg-clr);
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-clr);
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -25,28 +36,27 @@ header {
         text-transform: uppercase;
         word-spacing: -.5rem;
         /* letter-spacing: 2px; */
-        font-family: "Cinzel", serif;
+        /* font-family: "Cinzel", serif;
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
-        color: var(--font-clr);
-        /* color: var(--theme-clr); */
+        color: var(--text-clr); */
         font-size: 3rem;
 
         & span {
-            font-size: 2rem;
-            /* color: hsl(from var(--font-clr) h s calc(l + 15)); */
-            color: var(--font-clr-2);
+            font-size: 1.8rem;
+            /* color: hsl(from var(--text-clr) h s calc(l + 15)); */
+            color: hsl(from var(--text-clr) h s calc(l + 15));
         }
     }
 
     & nav {
-        width: 90%;
+        width: var(--app-width);
         margin: 1.5rem auto 0;
         background-image: linear-gradient(90deg, transparent, var(--theme-clr), transparent);
         display: flex;
         justify-content: center;
-        padding: .5rem;
+        padding: .3rem;
         position: relative;
 
         /* &::before {
@@ -55,7 +65,7 @@ header {
             top: 0;
             height: 1px;
             width: 100%;
-            background-image: linear-gradient(90deg, transparent, var(--font-clr), transparent);
+            background-image: linear-gradient(90deg, transparent, var(--text-clr), transparent);
         }
 
         &::after {
@@ -64,7 +74,7 @@ header {
             bottom: 0;
             height: 1px;
             width: 100%;
-            background-image: linear-gradient(90deg, transparent, var(--font-clr), transparent);
+            background-image: linear-gradient(90deg, transparent, var(--text-clr), transparent);
         } */
 
         &::before,
@@ -73,7 +83,7 @@ header {
             position: absolute;
             height: 1px;
             width: 100%;
-            background-image: linear-gradient(90deg, transparent, var(--font-clr), transparent);
+            background-image: linear-gradient(90deg, transparent, var(--text-clr), transparent);
         }
 
         &::before {
@@ -87,17 +97,18 @@ header {
         & ul {
             list-style-type: none;
             display: flex;
-            width: 50%;
+            width: calc(var(--app-width) - 30%);
             justify-content: space-evenly;
-            /* gap: 3rem; */
 
             & li {
                 padding: .2rem;
+                cursor: pointer;
 
                 & a {
                     padding: .2rem;
                     text-decoration: none;
-                    color: var(--font-clr-2);
+                    /* color: var(--text-clr-2); */
+                    color: hsl(from var(--text-clr) h s calc(l + 15));
                     font-family: "Cinzel", serif;
                     font-optical-sizing: auto;
                     font-weight: 500;
@@ -106,7 +117,7 @@ header {
                 }
 
                 &:hover a {
-                    color: var(--font-clr);
+                    color: var(--text-clr);
                 }
 
             }
@@ -115,20 +126,77 @@ header {
 }
 
 main {
-    min-height: 100svh;
-    background-color: hsl(from var(--theme-clr) h s l /.2);
-    width: 80%;
-    margin: 1rem auto 1rem;
+    flex: 1;
+    /* min-height: 100svh; */
+    /* background-color: hsl(from var(--theme-clr) h s l /.2); */
+    width: var(--app-width);
+    margin: 4rem auto 2rem;
+
+    /* display: grid;
+    grid-gap: 1.5rem; */
+    /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+    /* grid-template-columns: repeat(fit-content); */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* justify-content: center; */
+
+
+;
+
+    & a {
+        /* display: inline-block; */
+        width: fit-content;
+    }
+
+    & .card-sample {
+        width: fit-content;
+        /* background-color: var(--card-bg-clr); */
+        background-color: hsl(from var(--bg-clr) h s calc(l + 5));
+        padding: .5rem 1rem .5rem;
+        border-radius: .5rem;
+        /* border: 1px solid hsl(from var(--theme-clr) h s calc(l -10)); */
+        border: 1px solid var(--theme-clr);
+        /* !!! hsl() function doesn't work for border color !!! */
+        box-shadow: 0 0 6px 2px #000;
+
+        & .font-name-type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem 1.75rem .75rem;
+
+            & h2 {
+                font-size: 1.3rem;
+            }
+
+            & span {
+                color: hsl(from var(--theme-clr) h s calc(l + 25));
+                font-size: .8rem;
+                font-weight: 500;
+            }
+        }
+
+        & .sample-img {
+            padding: .5rem .75rem;
+            background-color: var(--bg-clr);
+            border-radius: .3rem;
+        }
+    }
 }
 
 footer {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+    /* font-family: "Cinzel", serif;
+    font-optical-sizing: auto; */
+    font-weight: 500;
+    /* font-style: normal; */
     text-align: center;
     padding: .75rem;
-    font-size: .8rem;
+    font-size: .9rem;
     background-color: var(--theme-clr);
-    color: var(--font-clr);
+    color: var(--text-clr);
 }
