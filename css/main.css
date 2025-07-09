@@ -35,7 +35,7 @@ header {
     & h1 {
         text-transform: uppercase;
         word-spacing: -.5rem;
-        /* letter-spacing: 2px; */
+        letter-spacing: 1px;
         /* font-family: "Cinzel", serif;
         font-optical-sizing: auto;
         font-weight: 700;
@@ -46,7 +46,7 @@ header {
         & span {
             font-size: 1.8rem;
             /* color: hsl(from var(--text-clr) h s calc(l + 15)); */
-            color: hsl(from var(--text-clr) h s calc(l + 15));
+            color: hsl(from var(--text-clr) h s calc(l + 12));
         }
     }
 
@@ -108,7 +108,7 @@ header {
                     padding: .2rem;
                     text-decoration: none;
                     /* color: var(--text-clr-2); */
-                    color: hsl(from var(--text-clr) h s calc(l + 15));
+                    color: hsl(from var(--text-clr) h s calc(l + 10));
                     font-family: "Cinzel", serif;
                     font-optical-sizing: auto;
                     font-weight: 500;
@@ -126,7 +126,7 @@ header {
 }
 
 main {
-    flex: 1;
+    /* flex: 1; */
     /* min-height: 100svh; */
     /* background-color: hsl(from var(--theme-clr) h s l /.2); */
     width: var(--app-width);
@@ -139,10 +139,11 @@ main {
     /* grid-template-columns: repeat(3, 1fr); */
 
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    /* justify-content: space-between; */
+    justify-content: center;
+    /* align-items: flex-start; */
     /* justify-content: center; */
 
 
@@ -151,12 +152,13 @@ main {
     & a {
         /* display: inline-block; */
         width: fit-content;
+        height: fit-content;
     }
 
     & .card-sample {
         width: fit-content;
         /* background-color: var(--card-bg-clr); */
-        background-color: hsl(from var(--bg-clr) h s calc(l + 5));
+        background-color: hsl(from var(--bg-clr) h s calc(l + 4));
         padding: .5rem 1rem .5rem;
         border-radius: .5rem;
         /* border: 1px solid hsl(from var(--theme-clr) h s calc(l -10)); */
@@ -196,6 +198,7 @@ main {
 
             & h2 {
                 font-size: 1.3rem;
+                letter-spacing: 1px;
             }
 
             & span {
@@ -214,6 +217,7 @@ main {
 }
 
 footer {
+    margin-top: auto;
     /* font-family: "Cinzel", serif;
     font-optical-sizing: auto; */
     font-weight: 500;
