@@ -5,7 +5,7 @@
     /* --card-bg-clr: hsl(210, 5%, 16%); */
     /* --card-bg-clr-2: hsl(0, 0%, 19%); */
     --theme-clr: hsl(203, 100%, 23%);
-    --text-clr: hsl(217, 89%, 82%);
+    --text-clr: hsl(217, 89%, 78%);
     /* --text-clr-2: hsl(140, 3%, 77%); */
 
     --app-width: 85%;
@@ -33,7 +33,7 @@ header {
     padding: 2rem 0 1rem;
 
     & h1 {
-        text-transform: uppercase;
+        text-transform: capitalize;
         word-spacing: -.5rem;
         letter-spacing: 1px;
         /* font-family: "Cinzel", serif;
@@ -44,6 +44,7 @@ header {
         font-size: 3rem;
 
         & span {
+            text-transform: lowercase;
             font-size: 1.8rem;
             /* color: hsl(from var(--text-clr) h s calc(l + 15)); */
             color: hsl(from var(--text-clr) h s calc(l + 12));
@@ -56,7 +57,7 @@ header {
         background-image: linear-gradient(90deg, transparent, var(--theme-clr), transparent);
         display: flex;
         justify-content: center;
-        padding: .3rem;
+        padding: .2rem;
         position: relative;
 
         /* &::before {
@@ -97,7 +98,7 @@ header {
         & ul {
             list-style-type: none;
             display: flex;
-            width: calc(var(--app-width) - 30%);
+            width: calc(var(--app-width) - 40%);
             justify-content: space-evenly;
 
             & li {
@@ -117,7 +118,8 @@ header {
                 }
 
                 &:hover a {
-                    color: var(--text-clr);
+                    /* color: var(--text-clr); */
+                    color: hsl(from var(--text-clr) h s calc(l - 5));
                 }
 
             }
@@ -130,7 +132,7 @@ main {
     /* min-height: 100svh; */
     /* background-color: hsl(from var(--theme-clr) h s l /.2); */
     width: var(--app-width);
-    margin: 4rem auto 2rem;
+    margin: 3rem auto 2rem;
 
     /* display: grid;
     grid-gap: 1.5rem; */
@@ -139,11 +141,12 @@ main {
     /* grid-template-columns: repeat(3, 1fr); */
 
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     flex-wrap: wrap;
     /* justify-content: space-between; */
     justify-content: center;
-    /* align-items: flex-start; */
+    /* align-items: center */
+    align-items: flex-start;
     /* justify-content: center; */
 
 
@@ -168,7 +171,7 @@ main {
         /* !!! hsl() function doesn't work for border color !!! */
         box-shadow: 0 0 8px 0 #000;
         position: relative;
-        transition: all 300ms ease-in-out;
+        transition: all 250ms ease-in-out;
 
         &:hover {
             border: 1px solid var(--theme-clr);
@@ -178,15 +181,17 @@ main {
             content: '';
             position: absolute;
             width: 0;
+            opacity: 0;
             height: 1px;
             background-image: linear-gradient(90deg, transparent, var(--text-clr), transparent);
             top: -1px;
-            left: 25rem;
-            transition: all 300ms ease-in-out;
+            left: 20rem;
+            transition: all 250ms ease-out;
         }
         &:hover::before {
+            width: 40%;
+            opacity: 1;
             left: 1rem;
-            width: 35%;
             background-image: linear-gradient(90deg, transparent, var(--text-clr), transparent);
         }
 
