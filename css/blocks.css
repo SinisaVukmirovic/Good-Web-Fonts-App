@@ -53,6 +53,7 @@ header {
                 & a {
                     padding: .2rem;
                     text-decoration: none;
+                    font-size: .9rem;
                     color: hsl(from var(--text-clr) h s calc(l + 10));
                     font-family: "Cinzel", serif;
                     font-optical-sizing: auto;
@@ -64,7 +65,6 @@ header {
                 &:hover a {
                     color: hsl(from var(--text-clr) h s calc(l - 5));
                 }
-
             }
         }
     }

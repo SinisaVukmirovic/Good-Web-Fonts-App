@@ -1,0 +1,127 @@
+@import url(./reset.css);
+
+main.font-page {
+    /* margin-block: auto; */
+    line-height: 1.2;
+    /* } */
+
+    & header {
+        all: unset;
+    }
+
+    & .card-detailed {
+        background-color: hsl(from var(--bg-clr) h s calc(l + 2));
+        color: #fff;
+        /* background-color: var(--bg-clr); */
+        /* background-color: hsl(from var(--bg-clr) h s calc(l + 4)); */
+        text-align: center;
+        border-radius: 1rem;
+        border: 1px solid var(--theme-clr);
+        padding-block: 5rem 1.5rem;
+
+        min-width: 50rem;
+
+        /* width: 40%;
+    min-width: 30rem; */
+        /* border: 1px solid hsl(240, 3%, 23%); */
+        /* !!! hsl() function doesn't work for border color !!! */
+        box-shadow: 0 0 8px 1px #000;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    & .card-detailed>*,
+    & .examples>* {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.03);
+            /* content: ''; */
+            /* top: -1.5rem; */
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 5px;
+
+            line-height: 1;
+            /* font-size: 3rem; */
+            font-weight: bold;
+            top: -2.25rem;
+        }
+    }
+
+    & h1::before {
+        content: 'FONT FAMILY';
+
+        width: 250%;
+        top: -3.25rem;
+        left: -75%;
+        font-size: 5rem;
+    }
+
+    & .sentences::before {
+        content: 'SENTENCES';
+        /* top: -2.25rem; */
+        left: 23%;
+        font-size: 4rem;
+    }
+
+    & .letters::before {
+        content: 'LETTERS';
+        /* top: -2.25rem; */
+        left: 30%;
+        font-size: 4rem;
+    }
+
+    & .numbers-symbols::before {
+        content: 'NUMBERS & SYMBOLS';
+        top: -1.5rem;
+        left: 13%;
+        font-size: 2.5rem;
+    }
+
+
+    /* .card-detailed {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+} */
+
+    & .examples {
+        font-size: 1.5rem;
+        margin-block: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    & .examples > div {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    & h1,
+    & a {
+        color: var(--text-clr);
+    }
+
+    & a {
+        font-family: sans-serif;
+        font-size: .9rem;
+    }
+
+    & h1 {
+        font-size: 5rem;
+    }
+
+    & .uppercase {
+        text-transform: uppercase;
+    }
+
+}

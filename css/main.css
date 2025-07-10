@@ -1,5 +1,6 @@
 @import url(./reset.css);
 @import url(./blocks.css);
+@import url(./detailed-card.css);
 
 :root {
     --bg-clr: hsl(240, 3%, 8%);
