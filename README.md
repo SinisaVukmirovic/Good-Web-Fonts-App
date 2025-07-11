@@ -13,6 +13,9 @@ color: hsl(from var(--theme-clr) h s calc(l + 25));
 
 ##### NOTE: HSL() color creating functionality doesn't work in border colors
 
+#### More about CSS view transitions
+[text](https://www.youtube.com/watch?v=quvE1uu1f_I)
+
 ___
 
 

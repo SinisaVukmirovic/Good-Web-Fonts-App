@@ -2,6 +2,15 @@
 @import url(./blocks.css);
 @import url(./font-page.css);
 
+@view-transition {
+    navigation: auto;
+}
+::view-transition-group(*) {
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    z-index: 1;
+}
+
 :root {
     --bg-clr: hsl(240, 3%, 8%);
     --theme-clr: hsl(203, 100%, 23%);
@@ -21,3 +30,12 @@ body {
     flex-direction: column;
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
