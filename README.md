@@ -15,11 +15,13 @@ color: hsl(from var(--theme-clr) h s calc(l + 25));
 
 ___
 
+
 ###### Manual for capturing sample screenshots from Google Fonts webpage:
+###### with screen resolution of 1680 x 1050
 
 <small>1. copy the sentence in filter side bar's textbox</small>
 
-<small>2. set the font size to 24px (with a few examples...)</small>
+<small>2. set the font size to 24px (some fonts cane be exceptions...)</small>
 
 <small>3. keep the filter sidebar open</small>
 

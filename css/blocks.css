@@ -91,7 +91,7 @@ main {
     & .card-sample {
         width: fit-content;
         background-color: hsl(from var(--bg-clr) h s calc(l + 4));
-        padding: .5rem 1rem .5rem;
+        padding: .5rem 1rem .75rem;
         border-radius: .5rem;
         border: 1px solid hsl(240, 3%, 23%);
         /* !!! hsl() function doesn't work for border color !!! */
