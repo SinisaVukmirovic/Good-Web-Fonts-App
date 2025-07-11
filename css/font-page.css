@@ -18,7 +18,7 @@ main.font-page {
         border-radius: 1rem;
         border: 1px solid var(--theme-clr);
         /* padding-block: 5rem 1.5rem; */
-        padding: 5rem 2rem 1.5rem;
+        padding: 4rem 2rem 1.5rem;
 
         min-width: 45rem;
 
@@ -40,6 +40,7 @@ main.font-page {
 
         &::before {
             position: absolute;
+            z-index: -1;
             color: rgba(255, 255, 255, 0.03);
             /* content: ''; */
             /* top: -1.5rem; */
@@ -53,6 +54,20 @@ main.font-page {
             font-weight: bold;
             top: -2.25rem;
         }
+    }
+
+    & .examples {
+        font-size: 1.5rem;
+        margin-block: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    & .examples > div {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
     }
 
     & h1::before {
@@ -93,19 +108,7 @@ main.font-page {
     align-items: center;
 } */
 
-    & .examples {
-        font-size: 1.5rem;
-        margin-block: 1rem 0;
-        display: flex;
-        flex-direction: column;
-        gap: 5rem;
-    }
 
-    & .examples > div {
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-    }
 
     & h1,
     & a {
@@ -113,8 +116,14 @@ main.font-page {
     }
 
     & a {
+        margin-top: 1rem;
         font-family: sans-serif;
         font-size: .9rem;
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+            color: hsl(from var(--theme-clr) h s calc(l + 20));
+        }
     }
 
     & h1 {

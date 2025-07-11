@@ -72,7 +72,7 @@ header {
 
 main {
     width: var(--app-width);
-    margin: 3rem auto 2rem;
+    margin: 3rem auto;
 
     display: flex;
     flex-wrap: wrap;
@@ -152,7 +152,8 @@ footer {
     text-align: center;
     font-weight: 500;
     font-size: .9rem;
-    padding: .75rem;
+    padding: .5rem;
     background-color: var(--theme-clr);
     color: var(--text-clr);
+    border-top: 1px solid var(--text-clr);
 }
