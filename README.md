@@ -6,21 +6,21 @@ App is based on Goggle Fonts page color scheme in dark mode, with view transitio
 ____
 
 #### Tryed out HSL() function for creating different color shades based on main color.
-
 --theme-clr: hsl(203, 100%, 23%);
 
 color: hsl(from var(--theme-clr) h s calc(l + 25));
-
 ##### NOTE: HSL() color creating functionality doesn't work in border colors
 
-#### More about CSS view transitions
-[text](https://www.youtube.com/watch?v=quvE1uu1f_I)
+_
+
+#### About CSS view transitions
+[Video tut](https://www.youtube.com/watch?v=quvE1uu1f_I)
+[MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group)
 
 ___
 
 
-###### Manual for capturing sample screenshots from Google Fonts webpage:
-###### with screen resolution of 1680 x 1050
+###### Manual for capturing sample screenshots from Google Fonts webpage, with monitor screen resolution of 1680 x 1050
 
 <small>1. copy the sentence in filter side bar's textbox</small>
 
