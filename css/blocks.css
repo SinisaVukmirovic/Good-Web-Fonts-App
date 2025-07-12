@@ -10,8 +10,9 @@ header {
 
         & span {
             text-transform: lowercase;
-            font-size: 1.8rem;
+            font-size: 2rem;
             color: hsl(from var(--text-clr) h s calc(l + 12));
+            font-weight: lighter;
         }
     }
 
