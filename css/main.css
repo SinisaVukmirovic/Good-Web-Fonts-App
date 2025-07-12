@@ -21,6 +21,8 @@
 
 html {
     scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    will-change: transition;
 }
 
 body {
