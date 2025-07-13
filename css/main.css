@@ -21,7 +21,7 @@
 
 html {
     scrollbar-gutter: stable;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     will-change: transition;
 }
 

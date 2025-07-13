@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <!-- <script type="module" src="./js/main.js"></script> -->
+    <script type="module" src="./js/main.js"></script>
 </head>
 
 <body>
@@ -17,18 +17,18 @@
         <h1>Good <span>Web</span> Fonts</h1>
         <nav>
             <h2 class="visually-hidden">Select font type</h2>
-            <ul>
-                <li><a href="#">serif</a></li>
-                <li><a href="#">sans-serif</a></li>
-                <li><a href="#">cursive</a></li>
+            <ul data-type-select>
+                <li data-type="serif">serif</li>
+                <li data-type="sans-serif">sans-serif</li>
+                <li data-type="cursive">cursive</li>
                 <!-- <li><a href="#">monospace</a></li> -->
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main data-font-cards>
         <!-- poppins -->
-        <a href="./font-pages/poppins.html">
+        <a href="./font-pages/poppins.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-poppins;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-popins;">Poppins</h3>
@@ -41,7 +41,7 @@
         </a>
 
         <!-- italiana -->
-        <a href="./font-pages/italiana.html">
+        <a href="./font-pages/italiana.html" data-type="serif">
             <div class="card-sample" style="view-transition-name: card-italiana;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-italiana;">Italiana</h3>
@@ -54,7 +54,7 @@
         </a>
 
         <!-- michroma -->
-        <a href="./font-pages/michroma.html">
+        <a href="./font-pages/michroma.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-michroma;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-michroma;">Michroma</h3>
@@ -67,7 +67,7 @@
         </a>
 
         <!-- cinzel -->
-        <a href="./font-pages/cinzel.html">
+        <a href="./font-pages/cinzel.html" data-type="serif">
             <div class="card-sample" style="view-transition-name: card-cinzel;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-cinzel;">Cinzel</h3>
@@ -80,7 +80,7 @@
         </a>
 
         <!-- tangerine -->
-        <a href="./font-pages/tangerine.html">
+        <a href="./font-pages/tangerine.html" data-type="cursive">
             <div class="card-sample"  style="view-transition-name: card-tangerine;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-tangerine;">Tangerine</h3>
@@ -93,7 +93,7 @@
         </a>
 
         <!-- patua one -->
-        <a href="./font-pages/patua-one.html">
+        <a href="./font-pages/patua-one.html" data-type="serif">
             <div class="card-sample" style="view-transition-name: card-patua-one;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-patua-one;">Patua One</h3>
@@ -106,7 +106,7 @@
         </a>
 
         <!-- russo one -->
-        <a href="./font-pages/russo-one.html">
+        <a href="./font-pages/russo-one.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-russo-one;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-russo-one;">Russo One</h3>
@@ -119,7 +119,7 @@
         </a>
 
         <!-- charm -->
-        <a href="./font-pages/charm.html">
+        <a href="./font-pages/charm.html" data-type="cursive">
             <div class="card-sample" style="view-transition-name: card-charm;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-charm;">Charm</h3>
@@ -132,7 +132,7 @@
         </a>
 
         <!-- glegoo -->
-        <a href="./font-pages/glegoo.html">
+        <a href="./font-pages/glegoo.html" data-type="serif">
             <div class="card-sample" style="view-transition-name: card-glegoo;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-glegoo;">Glegoo</h3>
@@ -145,7 +145,7 @@
         </a>
 
         <!-- italianno -->
-        <a href="./font-pages/italianno.html">
+        <a href="./font-pages/italianno.html" data-type="cursive">
             <div class="card-sample" style="view-transition-name: card-italianno;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-italianno;">Italianno</h3>
@@ -158,7 +158,7 @@
         </a>
 
         <!-- goldman -->
-        <a href="./font-pages/goldman.html">
+        <a href="./font-pages/goldman.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-goldman;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-goldman;">Goldman</h3>
@@ -171,7 +171,7 @@
         </a>
         
         <!-- paprika -->
-        <a href="./font-pages/paprika.html">
+        <a href="./font-pages/paprika.html" data-type="cursive">
             <div class="card-sample" style="view-transition-name: card-paprika;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-paprika;">Paprika</h3>
@@ -184,7 +184,7 @@
         </a>
 
         <!-- titillium web -->
-        <a href="./font-pages/titillium-web.html">
+        <a href="./font-pages/titillium-web.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-titillium-web;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-titillium-web;">Titillium Web</h3>
@@ -197,7 +197,7 @@
         </a>
 
         <!-- gruppo -->
-        <a href="./font-pages/gruppo.html">
+        <a href="./font-pages/gruppo.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-gruppo;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-gruppo;">Gruppo</h3>
@@ -210,7 +210,7 @@
         </a>
 
         <!-- denk-one -->
-        <a href="./font-pages/denk-one.html">
+        <a href="./font-pages/denk-one.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-denk-one;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-denk-one;">Denk One</h3>
@@ -223,7 +223,7 @@
         </a>
 
         <!-- stoke -->
-        <a href="./font-pages/stoke.html">
+        <a href="./font-pages/stoke.html" data-type="serif">
             <div class="card-sample" style="view-transition-name: card-stoke;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-stoke;">Stoke</h3>
@@ -236,7 +236,7 @@
         </a>
 
         <!-- teko -->
-        <a href="./font-pages/teko.html">
+        <a href="./font-pages/teko.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-teko;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-teko;">Teko</h3>
@@ -249,7 +249,7 @@
         </a>
 
         <!-- nixie-one -->
-        <a href="./font-pages/nixie-one.html">
+        <a href="./font-pages/nixie-one.html" data-type="serif">
             <div class="card-sample" style="view-transition-name: card-nixie-one;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-nixie-one;">Nixie One</h3>
@@ -262,7 +262,7 @@
         </a>
 
         <!-- play -->
-        <a href="./font-pages/play.html">
+        <a href="./font-pages/play.html" data-type="sans-serif">
             <div class="card-sample" style="view-transition-name: card-play;">
                 <div class="font-name-type">
                     <h3 style="view-transition-name: title-play;">Play</h3>
@@ -285,7 +285,7 @@
 
 <!-- just for corying -->
 <!-- 00000
-<a href="./font-pages/00000.html">
+<a href="./font-pages/00000.html" data-type="000000">
     <div class="card-sample" style="view-transition-name: card-00000;">
         <div class="font-name-type">
             <h3 style="view-transition-name: title-00000;">00000</h3>

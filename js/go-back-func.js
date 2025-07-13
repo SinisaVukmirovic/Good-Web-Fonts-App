@@ -1,3 +1,4 @@
+// go back functionality when clicked outside of card
 const cardElem = document.querySelector('.card-detailed');
 
 document.addEventListener('click', (e) => {

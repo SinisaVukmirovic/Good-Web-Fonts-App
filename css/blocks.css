@@ -48,28 +48,26 @@ header {
             justify-content: space-evenly;
 
             & li {
-                padding: .2rem;
-                cursor: pointer;
-
-                & a {
-                    padding: .2rem;
-                    text-decoration: none;
-                    font-size: .9rem;
-                    color: hsl(from var(--text-clr) h s calc(l + 10));
-                    font-family: "Cinzel", serif;
-                    font-optical-sizing: auto;
-                    font-weight: 500;
-                    font-style: normal;
-                    transition: color ease-in-out 200ms;
-                }
-
-                &:hover a {
+                padding: .2rem .5rem;
+                cursor: pointer;                
+                /* padding: .2rem; */
+                /* text-decoration: none; */
+                font-size: .9rem;
+                color: hsl(from var(--text-clr) h s calc(l + 10));
+                font-family: "Cinzel", serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                transition: color ease-in-out 200ms;
+                
+                &:hover {
                     color: hsl(from var(--text-clr) h s calc(l - 5));
                 }
             }
         }
     }
 }
+
 
 main {
     width: var(--app-width);
