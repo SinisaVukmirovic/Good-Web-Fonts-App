@@ -11,10 +11,25 @@ ____
 color: hsl(from var(--theme-clr) h s calc(l + 25));
 ##### NOTE: HSL() color creating functionality doesn't work in border colors
 
+#### Visually hidding elements in the DOM with this class
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+##### Not happy with how I did Copy to Clipboard functionality
+
+#### Hidden attribute now works on grid and flex-box elements
 _
 
 #### About CSS view transitions
 [Video tut](https://www.youtube.com/watch?v=quvE1uu1f_I)
+[Video doc](https://www.youtube.com/watch?v=DtErR1UUyiU)
 [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group)
 
 ___
