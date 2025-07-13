@@ -4,7 +4,7 @@ header {
 
     & h1 {
         text-transform: capitalize;
-        word-spacing: -.5rem;
+        word-spacing: -.8rem;
         letter-spacing: 1px;
         font-size: 3rem;
 

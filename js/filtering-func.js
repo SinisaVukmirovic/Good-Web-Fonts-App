@@ -6,19 +6,14 @@ const allFontCards = fontCardsElem.querySelectorAll('[data-type]');
 typeChoices.forEach(choice => {
     choice.addEventListener('click', (e) => {
         const selectedType = e.target.dataset.type;
-        
-        // document.startViewTransition(() => {
-        //     allFontCards.forEach(card => {
-        //         card.removeAttribute('hidden');
-                
-        //         if (selectedType == card.dataset.type) {
-        //             card.removeAttribute('hidden');
-        //             return;
-        //         }
-        //         card.setAttribute('hidden', true);
-        //     });
-        // });
         document.startViewTransition(() => addHiddenAttr(selectedType));
+    });
+    // keyboard enter key press
+    choice.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            const selectedType = e.target.dataset.type;
+            document.startViewTransition(() => addHiddenAttr(selectedType));
+        }
     });
 });
 
@@ -27,10 +22,9 @@ const addHiddenAttr = (selectedType) => {
         card.removeAttribute('hidden');
         
         if (selectedType == card.dataset.type) {
-            card.removeAttribute('hidden');
+            // card.removeAttribute('hidden');
             return;
         }
         card.setAttribute('hidden', true);
     });
 }
-
