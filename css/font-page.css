@@ -1,10 +1,8 @@
 @import url(./reset.css);
 
 main.font-page {
-    /* margin-block: auto; */
     padding-top: 2rem;
     line-height: 1.2;
-    /* } */
 
     & header {
         all: unset;
@@ -13,20 +11,12 @@ main.font-page {
     & .card-detailed {
         background-color: hsl(from var(--bg-clr) h s calc(l + 2));
         color: #fff;
-        /* background-color: var(--bg-clr); */
-        /* background-color: hsl(from var(--bg-clr) h s calc(l + 4)); */
         text-align: center;
         border-radius: 1rem;
         border: 1px solid var(--theme-clr);
         /* padding-block: 5rem 1.5rem; */
         padding: 5rem 2rem 1.5rem;
-
         min-width: 45rem;
-
-        /* width: 40%;
-    min-width: 30rem; */
-        /* border: 1px solid hsl(240, 3%, 23%); */
-        /* !!! hsl() function doesn't work for border color !!! */
         box-shadow: 0 0 8px 1px #000;
 
         display: flex;
@@ -51,7 +41,6 @@ main.font-page {
             letter-spacing: 5px;
 
             line-height: 1;
-            /* font-size: 3rem; */
             font-weight: bold;
             top: -2.25rem;
         }
@@ -100,16 +89,6 @@ main.font-page {
         left: 13%;
         font-size: 2rem;
     }
-
-
-    /* .card-detailed {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-} */
-
-
 
     & h1,
     & a {
@@ -160,7 +139,7 @@ main.font-page {
                     /* color: hsl(from var(--theme-clr) h s calc(l + 20)); */
                     color: hsl(from var(--text-clr) h s calc(l + 8));
                 }
-            }            
+            }
         }
     }
 

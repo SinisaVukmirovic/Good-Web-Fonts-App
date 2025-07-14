@@ -5,18 +5,18 @@
 ![Main page](screenshot-1.png)
 ![Font page](screenshot-2.png)
 
-App is based on Goggle Fonts page color scheme in dark mode, with view transitions, detailed pages and filtering by font type option.
+App is based on Goggle Fonts page color scheme in dark mode, with view transitions, detailed font pages and filtering by font type functionality.
 
-Some technologies used for this APP might not work on all browsers!
+#### Some technologies used for this APP might not work on all browsers!
 ____
 
-#### View Transition staggers if a lot of transitioned elements are one the screen and, sometimes, not working properly...
+#### View Transition staggers if a lot of transitioned elements are one the screen and, sometimes, not playing properly...
 
 #### Tryed out HSL() function for creating different color shades based on main color.
 --theme-clr: hsl(203, 100%, 23%);
 
 color: hsl(from var(--theme-clr) h s calc(l + 25));
-##### NOTE: HSL() color creating functionality doesn't work in border colors
+##### HSL() color creating functionality doesn't work in border colors
 
 #### Visually hidding elements in the DOM with this class
 .visually-hidden {
@@ -44,18 +44,18 @@ _
 ___
 
 
-###### Manual for capturing sample screenshots from Google Fonts webpage, with monitor screen resolution of 1680 x 1050
+##### Manual for capturing sample screenshots from Google Fonts webpage, with monitor screen resolution of 1680 x 1050
 
 <small>1. copy the sentence in filter side bar's textbox</small>
 
-<small>2. set the font size to 24px (some fonts cane be exceptions...)</small>
+<small>2. set the font size to 24px (can be exceptions for some fonts...)</small>
 
 <small>3. keep the filter sidebar open</small>
 
 <small>4. console opened and set on the right and shrinked all the way to the right</small>
 
-<small>5. result list should be displayed as grid</small>
+<small>5. result list on google fonts site should be displayed as grid</small>
 
 <small>6. than do a capture node screenshot of the image of font letters</small>
 
-<small>that way screenshot captured should be 377px in width!</small>
+##### that way screenshot captured should be 377px in width!
