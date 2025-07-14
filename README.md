@@ -2,10 +2,15 @@
 
 ### Created app with choices of good fonts for the web.
 
+![Main page](screenshot-1.png)
+![Font page](screenshot-2.png)
+
 App is based on Goggle Fonts page color scheme in dark mode, with view transitions, detailed pages and filtering by font type option.
 
 Some technologies used for this APP might not work on all browsers!
 ____
+
+#### View Transition staggers if a lot of transitioned elements are one the screen and, sometimes, not working properly...
 
 #### Tryed out HSL() function for creating different color shades based on main color.
 --theme-clr: hsl(203, 100%, 23%);
