@@ -1,6 +1,5 @@
 // go back functionality when clicked outside of card
 import { cardElem } from "./DOMElems.js";
-// const cardElem = document.querySelector('.card-detailed');
 
 document.addEventListener('click', (e) => {
     // Check if the clicked element is NOT inside my element

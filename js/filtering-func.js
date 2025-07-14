@@ -22,7 +22,6 @@ const addHiddenAttr = (selectedType) => {
         card.removeAttribute('hidden');
         
         if (selectedType == card.dataset.type) {
-            // card.removeAttribute('hidden');
             return;
         }
         card.setAttribute('hidden', true);
