@@ -18,8 +18,9 @@ ____
 color: hsl(from var(--theme-clr) h s calc(l + 25));
 ##### HSL() color creating functionality doesn't work in border colors
 
+
 #### Visually hidding elements in the DOM with this class
-.visually-hidden {
+<pre>.visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     height: 1px;
@@ -28,13 +29,17 @@ color: hsl(from var(--theme-clr) h s calc(l + 25));
     white-space: nowrap;
     width: 1px;
 }
+</pre>
+
+---
 
 ##### Not happy with how I did Copy to Clipboard functionality
 
 ##### No idea why pseudo elements position or go in second row happens for some font families...
 
-#### Hidden attribute now works on grid and flex-box elements
-_
+#### Hidden attribute now works on grid and flex-box elements?!
+
+---
 
 #### About CSS view transitions
 [Video tut](https://www.youtube.com/watch?v=quvE1uu1f_I)
@@ -42,7 +47,6 @@ _
 [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group)
 
 ___
-
 
 ##### Manual for capturing sample screenshots from Google Fonts webpage, with monitor screen resolution of 1680 x 1050
 
