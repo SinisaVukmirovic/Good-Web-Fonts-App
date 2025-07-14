@@ -12,7 +12,7 @@
     <!-- link below should be of this specific font link -->
     <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
-    <<script type="module" src="../js/font-page.js"></script>></script>
+    <script type="module" src="../js/font-page.js"></script>
 </head>
 <style>
     /* these styles should be of this specific font */
@@ -24,7 +24,7 @@
 </style>
 
 <body>
-    <header></header>
+    <header class="visually-hidden"></header>
 
     <main class="font-page">
         <div class="card-detailed" style="view-transition-name: card-paprika;">
@@ -44,6 +44,22 @@
                 <div class="numbers-symbols">
                     <p>1 2 3 4 5 6 7 8 9 0</p>
                     <p>[ ] { } ! @ # $ % & ( )</p>
+                </div>
+            </div>
+
+            <div class="for-copy">
+                <small>Copy to Clipboard</small>
+                <div data-copy-btns class="copy-btns">
+                    <button data-copy="link">HTML<br>&lt;link/&gt;</button>
+                    <button data-copy="import">CSS<br>@import</button>
+                    <button data-copy="styles">CSS<br>styles</button>
+                </div>
+                <div data-to-copy class="visually-hidden">
+                    <p data-copy="link" class="html-link"><link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet"></p>
+                    <p data-copy="import" class="css-import">@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');</p>
+                    <p data-copy="styles" class="css-styles">font-family: "Paprika", system-ui;
+        font-weight: 400;
+        font-style: normal;</p>
                 </div>
             </div>
 

@@ -45,8 +45,6 @@ copyBtns.forEach(btn => {
         //     const CSSstyles = document.querySelector('p.css-styles').innerHTML;
         //     console.log(CSSstyles)
         // }
-
-
     });
 });
 

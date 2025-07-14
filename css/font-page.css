@@ -75,9 +75,9 @@ main.font-page {
         content: 'FONT FAMILY';
 
         width: 250%;
-        top: -3.25rem;
+        /* top: -6.5rem; */
         left: -75%;
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
 
     & .sentences::before {

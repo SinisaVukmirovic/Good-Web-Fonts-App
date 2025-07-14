@@ -3,6 +3,8 @@
 ### Created app with choices of good fonts for the web.
 
 App is based on Goggle Fonts page color scheme in dark mode, with view transitions, detailed pages and filtering by font type option.
+
+Some technologies used for this APP might not work on all browsers!
 ____
 
 #### Tryed out HSL() function for creating different color shades based on main color.
@@ -23,6 +25,8 @@ color: hsl(from var(--theme-clr) h s calc(l + 25));
 }
 
 ##### Not happy with how I did Copy to Clipboard functionality
+
+##### No idea why pseudo elements position or go in second row happens for some font families...
 
 #### Hidden attribute now works on grid and flex-box elements
 _
