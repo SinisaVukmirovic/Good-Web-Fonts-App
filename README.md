@@ -1,6 +1,6 @@
 ## Good Web Fonts App
 
-### Created app with choices of good fonts for the web.
+### App with choices of good fonts for the web, with filtering functionality and CSS view transitions.
 
 ![Main page](screenshot-1.png)
 ![Font page](screenshot-2.png)
@@ -42,24 +42,27 @@ color: hsl(from var(--theme-clr) h s calc(l + 25));
 ---
 
 #### About CSS view transitions
+
 [Video tut](https://www.youtube.com/watch?v=quvE1uu1f_I)
+
 [Video doc](https://www.youtube.com/watch?v=DtErR1UUyiU)
+
 [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/::view-transition-group)
 
 ___
 
 ##### Manual for capturing sample screenshots from Google Fonts webpage, with monitor screen resolution of 1680 x 1050
 
-<small>1. copy the sentence in filter side bar's textbox</small>
+1. copy the sentence in filter side bar's textbox
 
-<small>2. set the font size to 24px (can be exceptions for some fonts...)</small>
+2. set the font size to 24px (can be exceptions for some fonts...)
 
-<small>3. keep the filter sidebar open</small>
+3. keep the filter sidebar open
 
-<small>4. console opened and set on the right and shrinked all the way to the right</small>
+4. console opened and set on the right and shrinked all the way to the right
 
-<small>5. result list on google fonts site should be displayed as grid</small>
+5. result list on google fonts site should be displayed as grid
 
-<small>6. than do a capture node screenshot of the image of font letters</small>
+6. than do a capture node screenshot of the image of font letters
 
 ##### that way screenshot captured should be 377px in width!

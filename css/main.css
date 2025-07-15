@@ -45,3 +45,21 @@ body {
     position: absolute;
     white-space: nowrap;
 }
+
+@media screen and (width < 1024px) {
+    .desktop-only-app {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        inset: 0;
+        background-color: var(--bg-clr);
+        font-size: 4vw;
+        color: var(--text-clr);
+        outline-offset: -5rem;
+        outline: 1px solid var(--text-clr);
+    }
+
+    body > :not(.desktop-only-app) {
+        display: none;
+    }
+}
