@@ -1,7 +1,10 @@
 import { fontFamilies } from "../data/fonts.js";
 import { fontCardsElem } from "./DOMElems.js";
+import shuffle from './shuffle.js';
 
-fontFamilies.forEach(font => {
+const shuffledFonts = shuffle(fontFamilies);
+
+shuffledFonts.forEach(font => {
     fontCardsElem.innerHTML += `
         <a href="./font-pages/${font.pathAndVtName}.html" data-type=${font.fontType}>
             <div class="card-sample" style="view-transition-name: card-${font.pathAndVtName};">
