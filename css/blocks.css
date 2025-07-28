@@ -127,6 +127,7 @@ main {
             padding: .5rem 1.75rem .75rem;
 
             & h3 {
+                text-transform: capitalize;
                 font-size: 1.3rem;
                 letter-spacing: 1px;
             }
