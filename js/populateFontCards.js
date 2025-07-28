@@ -4,16 +4,17 @@ import shuffle from './shuffle.js';
 
 const shuffledFonts = shuffle(fontFamilies);
 
-shuffledFonts.forEach(font => {
+// shuffledFonts.forEach(font => {
+shuffledFonts.forEach(( { pathAndVtName, fontType, fontName } = font ) => {
     fontCardsElem.innerHTML += `
-        <a href="./font-pages/${font.pathAndVtName}.html" data-type=${font.fontType}>
-            <div class="card-sample" style="view-transition-name: card-${font.pathAndVtName};">
+        <a href="./font-pages/${pathAndVtName}.html" data-type=${fontType}>
+            <div class="card-sample" style="view-transition-name: card-${pathAndVtName};">
                 <div class="font-name-type">
-                    <h3 style="view-transition-name: title-${font.pathAndVtName};">${font.fontName}</h3>
-                    <span>${font.fontType}</span>
+                    <h3 style="view-transition-name: title-${pathAndVtName};">${fontName}</h3>
+                    <span>${fontType}</span>
                 </div>
                 <div class="sample-img">
-                    <img src="./samples/${font.pathAndVtName}.png" alt="Sample of font family">
+                    <img src="./samples/${pathAndVtName}.png" alt="Sample of font family">
                 </div>
             </div>
         </a>
