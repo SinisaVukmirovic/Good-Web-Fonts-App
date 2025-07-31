@@ -34,6 +34,13 @@ body {
     color: var(--text-clr);
     display: flex;
     flex-direction: column;
+    
+    opacity: 0;
+    animation: fadeInOnLoad 500ms ease-in forwards;
+}
+
+@keyframes fadeInOnLoad {
+    to { opacity: 1; }
 }
 
 .visually-hidden {
