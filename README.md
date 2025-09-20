@@ -10,7 +10,7 @@ App is based on Goggle Fonts page color scheme in dark mode, with view transitio
 #### Some technologies used for this APP might not work on all browsers!
 ____
 
-#### View Transition staggers if a lot of transitioned elements are one the screen and, sometimes, not playing properly...
+#### View Transition staggers if a lot of transitioned elements are on the screen and, sometimes, not playing properly...
 
 #### Tryed out HSL() function for creating different color shades based on main color.
 --theme-clr: hsl(203, 100%, 23%);

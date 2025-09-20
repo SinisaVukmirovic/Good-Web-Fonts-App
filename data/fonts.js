@@ -77,5 +77,9 @@ const fontFamilies = [
     {
         fontName: 'play',
         fontType: 'sans-serif',
+    },
+    {
+        fontName: 'cormorant SC',
+        fontType: 'serif'
     }
 ];
