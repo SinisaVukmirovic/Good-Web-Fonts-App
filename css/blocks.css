@@ -143,6 +143,15 @@ main {
             padding: .5rem .75rem;
             background-color: var(--bg-clr);
             border-radius: .3rem;
+
+            font-family: serif;
+            font-weight: normal;
+            font-size: 1.1rem;
+            color: #ddd;
+
+            & img {
+                min-width: 377px;
+            }
         }
     }
 }
