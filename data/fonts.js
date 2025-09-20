@@ -79,7 +79,7 @@ const fontFamilies = [
         fontType: 'sans-serif',
     },
     {
-        fontName: 'cormorant SC',
+        fontName: 'cormorant sc',
         fontType: 'serif'
     }
 ];
