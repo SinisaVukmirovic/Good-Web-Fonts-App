@@ -134,10 +134,16 @@ main.font-page {
                 background-color: transparent;
                 border: none;
                 /* outline: none; */
+                transition: scale 200ms ease-in-out;
                 
                 &:hover {
                     /* color: hsl(from var(--theme-clr) h s calc(l + 20)); */
                     color: hsl(from var(--text-clr) h s calc(l + 8));
+                }
+
+                &:focus {
+                    scale: .95;
+                    outline: 1px solid var(--text-clr);
                 }
             }
         }
