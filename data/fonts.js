@@ -81,5 +81,13 @@ const fontFamilies = [
     {
         fontName: 'cormorant sc',
         fontType: 'serif'
+    },
+    {
+        fontName: 'prosto one',
+        fontType: 'sans-serif'
+    },
+    {
+        fontName: 'maven pro',
+        fontType: 'sans-serif'
     }
 ];
