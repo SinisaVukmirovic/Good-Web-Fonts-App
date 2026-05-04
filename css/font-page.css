@@ -9,6 +9,7 @@ main.font-page {
     }
 
     & .card-detailed {
+        overflow: hidden;
         background-color: hsl(from var(--bg-clr) h s calc(l + 2));
         color: #fff;
         text-align: center;
@@ -93,6 +94,7 @@ main.font-page {
     & h1,
     & a {
         color: var(--text-clr);
+        /* overflow: hidden; */
     }
 
     & a {

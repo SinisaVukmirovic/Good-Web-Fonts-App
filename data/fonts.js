@@ -89,5 +89,9 @@ const fontFamilies = [
     {
         fontName: 'maven pro',
         fontType: 'sans-serif'
+    },
+    {
+        fontName: 'zalando sans expanded',
+        fontType: 'sans-serif'
     }
 ];
