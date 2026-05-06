@@ -28,7 +28,7 @@ const fontFamilies = [
     },
     {
         fontName: 'patua one',
-        fontType: 'cursive',
+        fontType: 'serif',
     },
     {
         fontName: 'russo one',
