@@ -66,3 +66,6 @@ ___
 6. than do a capture node screenshot of the image of font letters
 
 ##### that way screenshot captured should be 377px in width!
+___
+
+##### Update! Google Fonts website changed, some of these instruction may now apply now!
