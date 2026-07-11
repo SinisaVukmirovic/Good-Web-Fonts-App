@@ -93,5 +93,13 @@ const fontFamilies = [
     {
         fontName: 'zalando sans expanded',
         fontType: 'sans-serif'
+    },
+    {
+        fontName: 'blinker',
+        fontType: 'sans-serif'
+    },
+    {
+        fontName: 'carter-one',
+        fontType: 'sans-serif'
     }
 ];
