@@ -99,7 +99,7 @@ const fontFamilies = [
         fontType: 'sans-serif'
     },
     {
-        fontName: 'carter-one',
+        fontName: 'carter one',
         fontType: 'sans-serif'
     }
 ];
